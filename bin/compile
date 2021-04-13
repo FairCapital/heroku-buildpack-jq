@@ -44,5 +44,7 @@ fi
 
 echo "-----> Copying jq binary"
 mkdir -p $BUILD_DIR/vendor
-cp -f $CACHE_DIR/$FILE_NAME $BUILD_DIR/vendor
+mkdir -p $BUILD_DIR/vendor/bin
+
+cp -f $CACHE_DIR/$FILE_NAME $BUILD_DIR/vendor/bin
 
